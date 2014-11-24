@@ -4,8 +4,12 @@ require 'sidekiq'
 module Seppuqu
   def install
     Sidekiq.class_exec{
+      def self.get_release_version
+        File.expand_path(__FILE__).split('/').last
+      end
+
       def self.current_release_version
-        @current_release_version ||= File.expand_path(__FILE__).scan(/\d{10,}/).map(&:to_i)[0]
+        @current_release_version ||= get_release_version
       end
 
       def self.latest_release_version
