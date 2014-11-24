@@ -6,11 +6,11 @@ require 'seppuqu/version'
 Gem::Specification.new do |spec|
   spec.name          = "seppuqu"
   spec.version       = Seppuqu::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["Radamanthus Batnag"]
+  spec.email         = ["radamanthus@gmail.com"]
+  spec.description   = %q{A simple wrapper for self-terminating sidekiqs}
+  spec.summary       = %q{See https://www.coffeepowered.net/2013/08/01/seppuqu-self-terminating-sidekiqs/}
+  spec.homepage      = "https://github.com/radamanthus/seppuqu"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
